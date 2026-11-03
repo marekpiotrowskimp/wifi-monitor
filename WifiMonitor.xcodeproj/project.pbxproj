@@ -1,0 +1,952 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		09FBAD73B5FB868E23FFDAF5 /* SignalStrengthBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = F013E05D68E2301D5D9CD591 /* SignalStrengthBar.swift */; };
+		0EFAEF0C4F77BB1BC13DD8F8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DBDD006753BAEF9524622D83 /* Assets.xcassets */; };
+		133AA113354B5AE453F18BE2 /* WiFiService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7E72908078169CC63A4A347 /* WiFiService.swift */; };
+		157DBEFC5C058F6AF0EEE056 /* InlineWidgetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA145899FA924936852640F6 /* InlineWidgetView.swift */; };
+		166A437D5018B43CF875DF50 /* NetworkViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FD3AC37B20B2A1D306D706D /* NetworkViewModel.swift */; };
+		2065661CE9EC1345A2D97B21 /* WiFiNetworkInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A0A236B3EF825C1B101DBCC /* WiFiNetworkInfo.swift */; };
+		22E74E58F1AB9A73FDB1A9A8 /* WatchWidgetEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06B4A2DBB8D363700B8C7C6E /* WatchWidgetEntry.swift */; };
+		23233858AA4830670E6BF0AE /* NetworkInfoCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C9F2A0BC80CFBFC3813B82F /* NetworkInfoCard.swift */; };
+		2C718E754BC5B794940CE24D /* WiFiWidgetProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8553C3DB11964F87C7F3670 /* WiFiWidgetProvider.swift */; };
+		314720839FEFAF1FF37C2E81 /* SharedDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DFF928E0BEC8CDA2CAA6277 /* SharedDataManager.swift */; };
+		354D5CD20E3280E6EFDA8115 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3177D5481618CF7AEEA413AE /* Assets.xcassets */; };
+		37B61B43B95E69AD68FD6FC7 /* SharedDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DFF928E0BEC8CDA2CAA6277 /* SharedDataManager.swift */; };
+		412F68F50DC96575A6675F94 /* WifiMonitorApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8047A067D529ABE9288EC73B /* WifiMonitorApp.swift */; };
+		43251A785915AA6878E29100 /* MediumWidgetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22C949E068DFB6F6308CA613 /* MediumWidgetView.swift */; };
+		43CB869C7B6D90897504F561 /* InlineComplicationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56557D0F97B7873B695B9C97 /* InlineComplicationView.swift */; };
+		55E6B832E811F01D72E2FF84 /* CircularComplicationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D793ADB9458FDB0291324FC /* CircularComplicationView.swift */; };
+		5FE8C216C9FF230FBC9EA9BC /* WiFiNetworkInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A0A236B3EF825C1B101DBCC /* WiFiNetworkInfo.swift */; };
+		659808C5E79022A5854D181D /* WifiMonitorWidget.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = C37871186B582B990031C173 /* WifiMonitorWidget.appex */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		6E53AD3358FA2ED4BC1EDF98 /* WatchNetworkViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D45CB3583452AE8EEE4498A7 /* WatchNetworkViewModel.swift */; };
+		75487963779AF4C1E402EDAE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BAE8137A330FBFBBC40026C6 /* Assets.xcassets */; };
+		7A71022A7CE09D31AA832DA2 /* CornerComplicationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF0F9BD28753018D07E1E70B /* CornerComplicationView.swift */; };
+		882CCBF254870F0B4D284CE1 /* WiFiNetworkInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A0A236B3EF825C1B101DBCC /* WiFiNetworkInfo.swift */; };
+		88B547981A31966A2042CEF5 /* WifiMonitorWatchWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DB4AD2611A014AC5DAFC447 /* WifiMonitorWatchWidget.swift */; };
+		88C768BDA69816B17D9C5253 /* WifiMonitorWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B2A4ABC6FFE95D224FAC53F /* WifiMonitorWidget.swift */; };
+		8C6A34DC3A83311EF95E0E9D /* WatchWidgetProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69E74B5E79A62EE49E7483E7 /* WatchWidgetProvider.swift */; };
+		93F5E05A92903F8ED93D24F0 /* WifiMonitorWatchWidget.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = F817AA3B68835035EB186544 /* WifiMonitorWatchWidget.appex */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		95650977003D585C2F1DC1A8 /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03CFFB7FCE2E8D72D556E9C0 /* LocationManager.swift */; };
+		989F0FE1D87D5E0FE13F18B9 /* WatchNetworkInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01CCCE229F1CBC3DDDFD8EE2 /* WatchNetworkInfo.swift */; };
+		9EB9C800B95057AAC869F760 /* WatchContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA95320031BDCA234E0D6E5C /* WatchContentView.swift */; };
+		A007165B8788795D61723C7B /* RectangularWidgetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCE1CB2B2A162DB163B7E2BB /* RectangularWidgetView.swift */; };
+		A651C1AB0113E678EB99F25D /* SharedDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DFF928E0BEC8CDA2CAA6277 /* SharedDataManager.swift */; };
+		AD485D21B738D443B6D50CFF /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03CFFB7FCE2E8D72D556E9C0 /* LocationManager.swift */; };
+		AE9B18574EC51FBDF202A985 /* WatchSignalBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 829184ECCF05A7C628B61B17 /* WatchSignalBar.swift */; };
+		AF9ABC2BD3D5C824C3E98DEF /* WiFiService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7E72908078169CC63A4A347 /* WiFiService.swift */; };
+		BCF533D8CC4A1B8345B0474A /* WifiMonitorWatchApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D3145DD327F715A98102DE4 /* WifiMonitorWatchApp.swift */; };
+		C9B88A78CEED8A92F4493563 /* SharedDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DFF928E0BEC8CDA2CAA6277 /* SharedDataManager.swift */; };
+		D0555925CA745B44EACB0F80 /* CircularWidgetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C8748FE9256FAAAAC1C6102 /* CircularWidgetView.swift */; };
+		D873C88A771090FE9952D3D3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EC270B62314C755B8E48C223 /* Assets.xcassets */; };
+		DF8CF171AA7788241C87F624 /* WiFiNetworkInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A0A236B3EF825C1B101DBCC /* WiFiNetworkInfo.swift */; };
+		EB20DD74E139AC178A40E5CB /* WiFiWidgetEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C48E41305AF74F08B683892 /* WiFiWidgetEntry.swift */; };
+		EC70CF620EF979EACFF3A2D2 /* SmallWidgetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C0535C7B9B5CCF9E2AE8E13 /* SmallWidgetView.swift */; };
+		EE6C2E6DBEA05EFF2600DD67 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C29B127A9890CEF1B5A1523 /* ContentView.swift */; };
+		F231941A15F71971931E8B86 /* RectangularComplicationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8B9C428CE1F2D3DA1EAE8D9 /* RectangularComplicationView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		49F706B6D8EF61D0B3014B35 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6A005FDC122CB4653FDFF9F7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5347A124620065EE298B955B;
+			remoteInfo = WifiMonitorWatchWidget;
+		};
+		A04E523E0BC0A8D312295FB8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6A005FDC122CB4653FDFF9F7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DA39C038C740720CC133A6F3;
+			remoteInfo = WifiMonitorWidget;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		07B4F922417CD7E627A31F5D /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				659808C5E79022A5854D181D /* WifiMonitorWidget.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		41D5D253F92DB83AE68F9513 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				93F5E05A92903F8ED93D24F0 /* WifiMonitorWatchWidget.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		01CCCE229F1CBC3DDDFD8EE2 /* WatchNetworkInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchNetworkInfo.swift; sourceTree = "<group>"; };
+		03CFFB7FCE2E8D72D556E9C0 /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
+		05ABAC7A6920A484FDC26FAC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		06B4A2DBB8D363700B8C7C6E /* WatchWidgetEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchWidgetEntry.swift; sourceTree = "<group>"; };
+		0B2A4ABC6FFE95D224FAC53F /* WifiMonitorWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WifiMonitorWidget.swift; sourceTree = "<group>"; };
+		1C48E41305AF74F08B683892 /* WiFiWidgetEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WiFiWidgetEntry.swift; sourceTree = "<group>"; };
+		1DB4AD2611A014AC5DAFC447 /* WifiMonitorWatchWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WifiMonitorWatchWidget.swift; sourceTree = "<group>"; };
+		22C949E068DFB6F6308CA613 /* MediumWidgetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediumWidgetView.swift; sourceTree = "<group>"; };
+		2C0535C7B9B5CCF9E2AE8E13 /* SmallWidgetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmallWidgetView.swift; sourceTree = "<group>"; };
+		2C8748FE9256FAAAAC1C6102 /* CircularWidgetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircularWidgetView.swift; sourceTree = "<group>"; };
+		2D793ADB9458FDB0291324FC /* CircularComplicationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircularComplicationView.swift; sourceTree = "<group>"; };
+		306D28D78B8ADF11AC6CA353 /* WifiMonitor-watchOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "WifiMonitor-watchOS.entitlements"; sourceTree = "<group>"; };
+		3177D5481618CF7AEEA413AE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		4D3145DD327F715A98102DE4 /* WifiMonitorWatchApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WifiMonitorWatchApp.swift; sourceTree = "<group>"; };
+		5462A6DD5C42F34706C34BBA /* WifiMonitorWidget.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = WifiMonitorWidget.entitlements; sourceTree = "<group>"; };
+		56557D0F97B7873B695B9C97 /* InlineComplicationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InlineComplicationView.swift; sourceTree = "<group>"; };
+		5A0A236B3EF825C1B101DBCC /* WiFiNetworkInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WiFiNetworkInfo.swift; sourceTree = "<group>"; };
+		69E74B5E79A62EE49E7483E7 /* WatchWidgetProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchWidgetProvider.swift; sourceTree = "<group>"; };
+		6C9F2A0BC80CFBFC3813B82F /* NetworkInfoCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkInfoCard.swift; sourceTree = "<group>"; };
+		6DFF928E0BEC8CDA2CAA6277 /* SharedDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharedDataManager.swift; sourceTree = "<group>"; };
+		6FD3AC37B20B2A1D306D706D /* NetworkViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkViewModel.swift; sourceTree = "<group>"; };
+		7467EC8A96B5CED6F9668CE9 /* WifiMonitor-iOS.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = "WifiMonitor-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8047A067D529ABE9288EC73B /* WifiMonitorApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WifiMonitorApp.swift; sourceTree = "<group>"; };
+		829184ECCF05A7C628B61B17 /* WatchSignalBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchSignalBar.swift; sourceTree = "<group>"; };
+		8455B011AA2160977A9D420F /* WifiMonitor-watchOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "WifiMonitor-watchOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8C29B127A9890CEF1B5A1523 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		9B00DF589FD3F4F42E35533F /* WifiMonitorWatchWidget.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = WifiMonitorWatchWidget.entitlements; sourceTree = "<group>"; };
+		A7E72908078169CC63A4A347 /* WiFiService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WiFiService.swift; sourceTree = "<group>"; };
+		B7857DB0EFD6A806E4D9B77A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		BA239B903377C545A91FC610 /* WifiMonitor-iOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "WifiMonitor-iOS.entitlements"; sourceTree = "<group>"; };
+		BA95320031BDCA234E0D6E5C /* WatchContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchContentView.swift; sourceTree = "<group>"; };
+		BAE8137A330FBFBBC40026C6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BF0F9BD28753018D07E1E70B /* CornerComplicationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CornerComplicationView.swift; sourceTree = "<group>"; };
+		C37871186B582B990031C173 /* WifiMonitorWidget.appex */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = "wrapper.app-extension"; path = WifiMonitorWidget.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		D45CB3583452AE8EEE4498A7 /* WatchNetworkViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchNetworkViewModel.swift; sourceTree = "<group>"; };
+		D8B9C428CE1F2D3DA1EAE8D9 /* RectangularComplicationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RectangularComplicationView.swift; sourceTree = "<group>"; };
+		DA145899FA924936852640F6 /* InlineWidgetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InlineWidgetView.swift; sourceTree = "<group>"; };
+		DBDD006753BAEF9524622D83 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DCE1CB2B2A162DB163B7E2BB /* RectangularWidgetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RectangularWidgetView.swift; sourceTree = "<group>"; };
+		E8553C3DB11964F87C7F3670 /* WiFiWidgetProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WiFiWidgetProvider.swift; sourceTree = "<group>"; };
+		EBF0C44F95A2F486EC28C40A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		EC270B62314C755B8E48C223 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F013E05D68E2301D5D9CD591 /* SignalStrengthBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignalStrengthBar.swift; sourceTree = "<group>"; };
+		F817AA3B68835035EB186544 /* WifiMonitorWatchWidget.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = WifiMonitorWatchWidget.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		FD695656588CF466185D6CBD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		23B9E9282DF5D30C5E400B78 /* WifiMonitor-iOS */ = {
+			isa = PBXGroup;
+			children = (
+				7E6C31B2B47D28A12630F886 /* App */,
+				E4B924F37036FC18994B7413 /* Resources */,
+				C4742AFB6AECC55FB426315A /* ViewModels */,
+				CB031415ED68D7E9B62DC296 /* Views */,
+				EBF0C44F95A2F486EC28C40A /* Info.plist */,
+				BA239B903377C545A91FC610 /* WifiMonitor-iOS.entitlements */,
+			);
+			path = "WifiMonitor-iOS";
+			sourceTree = "<group>";
+		};
+		25CBAF9309FD5DB022DD1413 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				03CFFB7FCE2E8D72D556E9C0 /* LocationManager.swift */,
+				6DFF928E0BEC8CDA2CAA6277 /* SharedDataManager.swift */,
+				A7E72908078169CC63A4A347 /* WiFiService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		3E75E59B351CE7BA7ECF090F /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				2D793ADB9458FDB0291324FC /* CircularComplicationView.swift */,
+				BF0F9BD28753018D07E1E70B /* CornerComplicationView.swift */,
+				56557D0F97B7873B695B9C97 /* InlineComplicationView.swift */,
+				D8B9C428CE1F2D3DA1EAE8D9 /* RectangularComplicationView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		3F96EF5F780ADD507AB91B5F = {
+			isa = PBXGroup;
+			children = (
+				AF6F6B90969E089CDDF689DB /* Shared */,
+				23B9E9282DF5D30C5E400B78 /* WifiMonitor-iOS */,
+				94A414AD18949CA9C3584196 /* WifiMonitor-watchOS */,
+				82DE3C068B1462BEBEC48A21 /* WifiMonitorWatchWidget */,
+				D8E7D5DB8CE2C2258F70AAF3 /* WifiMonitorWidget */,
+				F1B54B514F32D575F25BA738 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		42C7A1AABD2A91C927E6A43D /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				D45CB3583452AE8EEE4498A7 /* WatchNetworkViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		4306A711ECA568721B075898 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				3177D5481618CF7AEEA413AE /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		510C8D9434AA501AED33DAFE /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				5A0A236B3EF825C1B101DBCC /* WiFiNetworkInfo.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		7E6C31B2B47D28A12630F886 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				8047A067D529ABE9288EC73B /* WifiMonitorApp.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		82DE3C068B1462BEBEC48A21 /* WifiMonitorWatchWidget */ = {
+			isa = PBXGroup;
+			children = (
+				4306A711ECA568721B075898 /* Resources */,
+				3E75E59B351CE7BA7ECF090F /* Views */,
+				FD695656588CF466185D6CBD /* Info.plist */,
+				06B4A2DBB8D363700B8C7C6E /* WatchWidgetEntry.swift */,
+				69E74B5E79A62EE49E7483E7 /* WatchWidgetProvider.swift */,
+				9B00DF589FD3F4F42E35533F /* WifiMonitorWatchWidget.entitlements */,
+				1DB4AD2611A014AC5DAFC447 /* WifiMonitorWatchWidget.swift */,
+			);
+			path = WifiMonitorWatchWidget;
+			sourceTree = "<group>";
+		};
+		94A414AD18949CA9C3584196 /* WifiMonitor-watchOS */ = {
+			isa = PBXGroup;
+			children = (
+				F299F8EA9466D2BD51F16CDE /* App */,
+				FBDF7DBF354EF163B427F3F2 /* Resources */,
+				42C7A1AABD2A91C927E6A43D /* ViewModels */,
+				9D58232A8C6EECDD69D43279 /* Views */,
+				05ABAC7A6920A484FDC26FAC /* Info.plist */,
+				306D28D78B8ADF11AC6CA353 /* WifiMonitor-watchOS.entitlements */,
+			);
+			path = "WifiMonitor-watchOS";
+			sourceTree = "<group>";
+		};
+		9D58232A8C6EECDD69D43279 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				BA95320031BDCA234E0D6E5C /* WatchContentView.swift */,
+				01CCCE229F1CBC3DDDFD8EE2 /* WatchNetworkInfo.swift */,
+				829184ECCF05A7C628B61B17 /* WatchSignalBar.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		AF6F6B90969E089CDDF689DB /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				510C8D9434AA501AED33DAFE /* Models */,
+				25CBAF9309FD5DB022DD1413 /* Services */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		BB20058E91DA95A1864C97E3 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				2C8748FE9256FAAAAC1C6102 /* CircularWidgetView.swift */,
+				DA145899FA924936852640F6 /* InlineWidgetView.swift */,
+				22C949E068DFB6F6308CA613 /* MediumWidgetView.swift */,
+				DCE1CB2B2A162DB163B7E2BB /* RectangularWidgetView.swift */,
+				2C0535C7B9B5CCF9E2AE8E13 /* SmallWidgetView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		C4742AFB6AECC55FB426315A /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				6FD3AC37B20B2A1D306D706D /* NetworkViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		C68312FCEB387C6E264BA7C6 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				BAE8137A330FBFBBC40026C6 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		CB031415ED68D7E9B62DC296 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				8C29B127A9890CEF1B5A1523 /* ContentView.swift */,
+				6C9F2A0BC80CFBFC3813B82F /* NetworkInfoCard.swift */,
+				F013E05D68E2301D5D9CD591 /* SignalStrengthBar.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		D8E7D5DB8CE2C2258F70AAF3 /* WifiMonitorWidget */ = {
+			isa = PBXGroup;
+			children = (
+				C68312FCEB387C6E264BA7C6 /* Resources */,
+				BB20058E91DA95A1864C97E3 /* Views */,
+				B7857DB0EFD6A806E4D9B77A /* Info.plist */,
+				5462A6DD5C42F34706C34BBA /* WifiMonitorWidget.entitlements */,
+				0B2A4ABC6FFE95D224FAC53F /* WifiMonitorWidget.swift */,
+				1C48E41305AF74F08B683892 /* WiFiWidgetEntry.swift */,
+				E8553C3DB11964F87C7F3670 /* WiFiWidgetProvider.swift */,
+			);
+			path = WifiMonitorWidget;
+			sourceTree = "<group>";
+		};
+		E4B924F37036FC18994B7413 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				EC270B62314C755B8E48C223 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		F1B54B514F32D575F25BA738 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7467EC8A96B5CED6F9668CE9 /* WifiMonitor-iOS.app */,
+				8455B011AA2160977A9D420F /* WifiMonitor-watchOS.app */,
+				F817AA3B68835035EB186544 /* WifiMonitorWatchWidget.appex */,
+				C37871186B582B990031C173 /* WifiMonitorWidget.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F299F8EA9466D2BD51F16CDE /* App */ = {
+			isa = PBXGroup;
+			children = (
+				4D3145DD327F715A98102DE4 /* WifiMonitorWatchApp.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		FBDF7DBF354EF163B427F3F2 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				DBDD006753BAEF9524622D83 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5347A124620065EE298B955B /* WifiMonitorWatchWidget */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A9D57BE05E1B610F0248CD48 /* Build configuration list for PBXNativeTarget "WifiMonitorWatchWidget" */;
+			buildPhases = (
+				07C0C950C4DF23A68DB4D0A3 /* Sources */,
+				2D421112EE918DE0530EF0FA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = WifiMonitorWatchWidget;
+			packageProductDependencies = (
+			);
+			productName = WifiMonitorWatchWidget;
+			productReference = F817AA3B68835035EB186544 /* WifiMonitorWatchWidget.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		DA39C038C740720CC133A6F3 /* WifiMonitorWidget */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4698400895143D4F139D6CF6 /* Build configuration list for PBXNativeTarget "WifiMonitorWidget" */;
+			buildPhases = (
+				39157B4E4BE8EF065A4FA0D3 /* Sources */,
+				E0E952C2193CAFCBD743AD1B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = WifiMonitorWidget;
+			packageProductDependencies = (
+			);
+			productName = WifiMonitorWidget;
+			productReference = C37871186B582B990031C173 /* WifiMonitorWidget.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		E2755EF9E41AF16A5B20DF11 /* WifiMonitor-iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 10510A6164F900EA09D86CBC /* Build configuration list for PBXNativeTarget "WifiMonitor-iOS" */;
+			buildPhases = (
+				508CD37BF4D2927FDA87A70E /* Sources */,
+				944CFF675A6AE2F07FD867F7 /* Resources */,
+				07B4F922417CD7E627A31F5D /* Embed Foundation Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0DCA89BF67DBC514E439F301 /* PBXTargetDependency */,
+			);
+			name = "WifiMonitor-iOS";
+			packageProductDependencies = (
+			);
+			productName = "WifiMonitor-iOS";
+			productReference = 7467EC8A96B5CED6F9668CE9 /* WifiMonitor-iOS.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F827EE8D1E3161D3C8461E5A /* WifiMonitor-watchOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 10436150508953049DAFF3B6 /* Build configuration list for PBXNativeTarget "WifiMonitor-watchOS" */;
+			buildPhases = (
+				CF92A31649FD3298C84E6CBC /* Sources */,
+				DB0DF827AF90361FE4F52C3C /* Resources */,
+				41D5D253F92DB83AE68F9513 /* Embed Foundation Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5D999E9FA13B665AF45D8432 /* PBXTargetDependency */,
+			);
+			name = "WifiMonitor-watchOS";
+			packageProductDependencies = (
+			);
+			productName = "WifiMonitor-watchOS";
+			productReference = 8455B011AA2160977A9D420F /* WifiMonitor-watchOS.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6A005FDC122CB4653FDFF9F7 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1500;
+				TargetAttributes = {
+					5347A124620065EE298B955B = {
+						DevelopmentTeam = JMMW48F6X4;
+						ProvisioningStyle = Automatic;
+					};
+					DA39C038C740720CC133A6F3 = {
+						DevelopmentTeam = JMMW48F6X4;
+						ProvisioningStyle = Automatic;
+					};
+					E2755EF9E41AF16A5B20DF11 = {
+						DevelopmentTeam = JMMW48F6X4;
+						ProvisioningStyle = Automatic;
+					};
+					F827EE8D1E3161D3C8461E5A = {
+						DevelopmentTeam = JMMW48F6X4;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = BC04C2DF01E3FBAD6C3C6969 /* Build configuration list for PBXProject "WifiMonitor" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = 3F96EF5F780ADD507AB91B5F;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E2755EF9E41AF16A5B20DF11 /* WifiMonitor-iOS */,
+				F827EE8D1E3161D3C8461E5A /* WifiMonitor-watchOS */,
+				5347A124620065EE298B955B /* WifiMonitorWatchWidget */,
+				DA39C038C740720CC133A6F3 /* WifiMonitorWidget */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2D421112EE918DE0530EF0FA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				354D5CD20E3280E6EFDA8115 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		944CFF675A6AE2F07FD867F7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D873C88A771090FE9952D3D3 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DB0DF827AF90361FE4F52C3C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0EFAEF0C4F77BB1BC13DD8F8 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E0E952C2193CAFCBD743AD1B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				75487963779AF4C1E402EDAE /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		07C0C950C4DF23A68DB4D0A3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				55E6B832E811F01D72E2FF84 /* CircularComplicationView.swift in Sources */,
+				7A71022A7CE09D31AA832DA2 /* CornerComplicationView.swift in Sources */,
+				43CB869C7B6D90897504F561 /* InlineComplicationView.swift in Sources */,
+				F231941A15F71971931E8B86 /* RectangularComplicationView.swift in Sources */,
+				314720839FEFAF1FF37C2E81 /* SharedDataManager.swift in Sources */,
+				22E74E58F1AB9A73FDB1A9A8 /* WatchWidgetEntry.swift in Sources */,
+				8C6A34DC3A83311EF95E0E9D /* WatchWidgetProvider.swift in Sources */,
+				2065661CE9EC1345A2D97B21 /* WiFiNetworkInfo.swift in Sources */,
+				88B547981A31966A2042CEF5 /* WifiMonitorWatchWidget.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		39157B4E4BE8EF065A4FA0D3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D0555925CA745B44EACB0F80 /* CircularWidgetView.swift in Sources */,
+				157DBEFC5C058F6AF0EEE056 /* InlineWidgetView.swift in Sources */,
+				43251A785915AA6878E29100 /* MediumWidgetView.swift in Sources */,
+				A007165B8788795D61723C7B /* RectangularWidgetView.swift in Sources */,
+				37B61B43B95E69AD68FD6FC7 /* SharedDataManager.swift in Sources */,
+				EC70CF620EF979EACFF3A2D2 /* SmallWidgetView.swift in Sources */,
+				DF8CF171AA7788241C87F624 /* WiFiNetworkInfo.swift in Sources */,
+				EB20DD74E139AC178A40E5CB /* WiFiWidgetEntry.swift in Sources */,
+				2C718E754BC5B794940CE24D /* WiFiWidgetProvider.swift in Sources */,
+				88C768BDA69816B17D9C5253 /* WifiMonitorWidget.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		508CD37BF4D2927FDA87A70E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EE6C2E6DBEA05EFF2600DD67 /* ContentView.swift in Sources */,
+				AD485D21B738D443B6D50CFF /* LocationManager.swift in Sources */,
+				23233858AA4830670E6BF0AE /* NetworkInfoCard.swift in Sources */,
+				166A437D5018B43CF875DF50 /* NetworkViewModel.swift in Sources */,
+				C9B88A78CEED8A92F4493563 /* SharedDataManager.swift in Sources */,
+				09FBAD73B5FB868E23FFDAF5 /* SignalStrengthBar.swift in Sources */,
+				5FE8C216C9FF230FBC9EA9BC /* WiFiNetworkInfo.swift in Sources */,
+				AF9ABC2BD3D5C824C3E98DEF /* WiFiService.swift in Sources */,
+				412F68F50DC96575A6675F94 /* WifiMonitorApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CF92A31649FD3298C84E6CBC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				95650977003D585C2F1DC1A8 /* LocationManager.swift in Sources */,
+				A651C1AB0113E678EB99F25D /* SharedDataManager.swift in Sources */,
+				9EB9C800B95057AAC869F760 /* WatchContentView.swift in Sources */,
+				989F0FE1D87D5E0FE13F18B9 /* WatchNetworkInfo.swift in Sources */,
+				6E53AD3358FA2ED4BC1EDF98 /* WatchNetworkViewModel.swift in Sources */,
+				AE9B18574EC51FBDF202A985 /* WatchSignalBar.swift in Sources */,
+				882CCBF254870F0B4D284CE1 /* WiFiNetworkInfo.swift in Sources */,
+				133AA113354B5AE453F18BE2 /* WiFiService.swift in Sources */,
+				BCF533D8CC4A1B8345B0474A /* WifiMonitorWatchApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		0DCA89BF67DBC514E439F301 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DA39C038C740720CC133A6F3 /* WifiMonitorWidget */;
+			targetProxy = A04E523E0BC0A8D312295FB8 /* PBXContainerItemProxy */;
+		};
+		5D999E9FA13B665AF45D8432 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5347A124620065EE298B955B /* WifiMonitorWatchWidget */;
+			targetProxy = 49F706B6D8EF61D0B3014B35 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		111264449C74EFA0171BCC03 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_ENTITLEMENTS = WifiMonitorWatchWidget/WifiMonitorWatchWidget.entitlements;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = WifiMonitorWatchWidget/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.marek.piotrowski.wifimonitor.watchkitapp.widget;
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+			};
+			name = Debug;
+		};
+		2F91EF5210ECA574A8D637F6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = JMMW48F6X4;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 1.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				WATCHOS_DEPLOYMENT_TARGET = 10.0;
+			};
+			name = Debug;
+		};
+		33CBCB6477D098E10CE2111B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_ENTITLEMENTS = WifiMonitorWidget/WifiMonitorWidget.entitlements;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = WifiMonitorWidget/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.marek.piotrowski.wifimonitor.widget;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		49A13CD625D7FE777A4BC634 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_ENTITLEMENTS = WifiMonitorWatchWidget/WifiMonitorWatchWidget.entitlements;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = WifiMonitorWatchWidget/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.marek.piotrowski.wifimonitor.watchkitapp.widget;
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+			};
+			name = Release;
+		};
+		796BAA5BE792138055A34DDA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_ENTITLEMENTS = WifiMonitorWidget/WifiMonitorWidget.entitlements;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = WifiMonitorWidget/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.marek.piotrowski.wifimonitor.widget;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		8E166C6AF07C1F034F364339 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "WifiMonitor-iOS/WifiMonitor-iOS.entitlements";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = "WifiMonitor-iOS/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "WiFi Monitor";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.marek.piotrowski.wifimonitor;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		A8C39596441CE6C4FB409716 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = JMMW48F6X4;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 1.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				WATCHOS_DEPLOYMENT_TARGET = 10.0;
+			};
+			name = Release;
+		};
+		ACD13F1FE59090BE7CD1BF44 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "WifiMonitor-iOS/WifiMonitor-iOS.entitlements";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = "WifiMonitor-iOS/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "WiFi Monitor";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.marek.piotrowski.wifimonitor;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B4170B927D4667286192D18D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "WifiMonitor-watchOS/WifiMonitor-watchOS.entitlements";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = "WifiMonitor-watchOS/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "WiFi Monitor";
+				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = com.marek.piotrowski.wifimonitor;
+				INFOPLIST_KEY_WKRunsIndependentlyOfCompanionApp = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.marek.piotrowski.wifimonitor.watchkitapp;
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+			};
+			name = Debug;
+		};
+		EDC1CAC07B49BB350D8288EA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "WifiMonitor-watchOS/WifiMonitor-watchOS.entitlements";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = "WifiMonitor-watchOS/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "WiFi Monitor";
+				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = com.marek.piotrowski.wifimonitor;
+				INFOPLIST_KEY_WKRunsIndependentlyOfCompanionApp = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.marek.piotrowski.wifimonitor.watchkitapp;
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		10436150508953049DAFF3B6 /* Build configuration list for PBXNativeTarget "WifiMonitor-watchOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B4170B927D4667286192D18D /* Debug */,
+				EDC1CAC07B49BB350D8288EA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		10510A6164F900EA09D86CBC /* Build configuration list for PBXNativeTarget "WifiMonitor-iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ACD13F1FE59090BE7CD1BF44 /* Debug */,
+				8E166C6AF07C1F034F364339 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		4698400895143D4F139D6CF6 /* Build configuration list for PBXNativeTarget "WifiMonitorWidget" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				796BAA5BE792138055A34DDA /* Debug */,
+				33CBCB6477D098E10CE2111B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		A9D57BE05E1B610F0248CD48 /* Build configuration list for PBXNativeTarget "WifiMonitorWatchWidget" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				111264449C74EFA0171BCC03 /* Debug */,
+				49A13CD625D7FE777A4BC634 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		BC04C2DF01E3FBAD6C3C6969 /* Build configuration list for PBXProject "WifiMonitor" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2F91EF5210ECA574A8D637F6 /* Debug */,
+				A8C39596441CE6C4FB409716 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 6A005FDC122CB4653FDFF9F7 /* Project object */;
+}

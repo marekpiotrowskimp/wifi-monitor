@@ -1,0 +1,191 @@
+name: WifiMonitor
+options:
+  bundleIdPrefix: com.marek.piotrowski.wifimonitor
+  deploymentTarget:
+    iOS: "17.0"
+    watchOS: "10.0"
+  xcodeVersion: "15.0"
+  generateEmptyDirectories: true
+  groupSortPosition: top
+  createIntermediateGroups: true
+
+settings:
+  base:
+    SWIFT_VERSION: "5.0"
+    DEVELOPMENT_TEAM: "JMMW48F6X4"
+    CODE_SIGN_STYLE: Automatic
+    MARKETING_VERSION: "1.0"
+    CURRENT_PROJECT_VERSION: "1"
+
+configs:
+  Debug: debug
+  Release: release
+
+targets:
+  # ============================================
+  # iOS Main App
+  # ============================================
+  WifiMonitor-iOS:
+    type: application
+    platform: iOS
+    sources:
+      - path: WifiMonitor-iOS
+        excludes:
+          - "**/.DS_Store"
+      - path: Shared
+        excludes:
+          - "**/.DS_Store"
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.marek.piotrowski.wifimonitor
+        INFOPLIST_FILE: WifiMonitor-iOS/Info.plist
+        CODE_SIGN_ENTITLEMENTS: WifiMonitor-iOS/WifiMonitor-iOS.entitlements
+        ASSETCATALOG_COMPILER_APPICON_NAME: AppIcon
+        ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME: AccentColor
+        INFOPLIST_KEY_CFBundleDisplayName: "WiFi Monitor"
+        INFOPLIST_KEY_LSApplicationCategoryType: "public.app-category.utilities"
+        INFOPLIST_KEY_UIApplicationSceneManifest_Generation: YES
+        INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents: YES
+        INFOPLIST_KEY_UILaunchScreen_Generation: YES
+        TARGETED_DEVICE_FAMILY: "1,2"
+        GENERATE_INFOPLIST_FILE: NO
+        ENABLE_PREVIEWS: YES
+    dependencies:
+      - target: WifiMonitorWidget
+        embed: true
+        codeSign: true
+
+  # ============================================
+  # iOS Widget Extension
+  # ============================================
+  WifiMonitorWidget:
+    type: app-extension
+    platform: iOS
+    sources:
+      - path: WifiMonitorWidget
+        excludes:
+          - "**/.DS_Store"
+      - path: Shared/Models
+        excludes:
+          - "**/.DS_Store"
+      - path: Shared/Services/SharedDataManager.swift
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.marek.piotrowski.wifimonitor.widget
+        INFOPLIST_FILE: WifiMonitorWidget/Info.plist
+        CODE_SIGN_ENTITLEMENTS: WifiMonitorWidget/WifiMonitorWidget.entitlements
+        ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME: WidgetBackground
+        ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME: AccentColor
+        TARGETED_DEVICE_FAMILY: "1,2"
+        GENERATE_INFOPLIST_FILE: NO
+        SKIP_INSTALL: YES
+        LD_RUNPATH_SEARCH_PATHS:
+          - "$(inherited)"
+          - "@executable_path/Frameworks"
+          - "@executable_path/../../Frameworks"
+
+  # ============================================
+  # watchOS Main App
+  # ============================================
+  WifiMonitor-watchOS:
+    type: application
+    platform: watchOS
+    sources:
+      - path: WifiMonitor-watchOS
+        excludes:
+          - "**/.DS_Store"
+      - path: Shared
+        excludes:
+          - "**/.DS_Store"
+    settings:
+      base:
+        ARCHS: $(ARCHS_STANDARD)
+        PRODUCT_BUNDLE_IDENTIFIER: com.marek.piotrowski.wifimonitor.watchkitapp
+        INFOPLIST_FILE: WifiMonitor-watchOS/Info.plist
+        CODE_SIGN_ENTITLEMENTS: WifiMonitor-watchOS/WifiMonitor-watchOS.entitlements
+        ASSETCATALOG_COMPILER_APPICON_NAME: AppIcon
+        ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME: AccentColor
+        INFOPLIST_KEY_CFBundleDisplayName: "WiFi Monitor"
+        INFOPLIST_KEY_WKCompanionAppBundleIdentifier: com.marek.piotrowski.wifimonitor
+        INFOPLIST_KEY_WKRunsIndependentlyOfCompanionApp: YES
+        TARGETED_DEVICE_FAMILY: "4"
+        GENERATE_INFOPLIST_FILE: NO
+        ENABLE_PREVIEWS: YES
+        SKIP_INSTALL: YES
+    dependencies:
+      - target: WifiMonitorWatchWidget
+        embed: true
+        codeSign: true
+
+  # ============================================
+  # watchOS Widget Extension (Complications)
+  # ============================================
+  WifiMonitorWatchWidget:
+    type: app-extension
+    platform: watchOS
+    sources:
+      - path: WifiMonitorWatchWidget
+        excludes:
+          - "**/.DS_Store"
+      - path: Shared/Models
+        excludes:
+          - "**/.DS_Store"
+      - path: Shared/Services/SharedDataManager.swift
+    settings:
+      base:
+        ARCHS: $(ARCHS_STANDARD)
+        PRODUCT_BUNDLE_IDENTIFIER: com.marek.piotrowski.wifimonitor.watchkitapp.widget
+        INFOPLIST_FILE: WifiMonitorWatchWidget/Info.plist
+        CODE_SIGN_ENTITLEMENTS: WifiMonitorWatchWidget/WifiMonitorWatchWidget.entitlements
+        ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME: WidgetBackground
+        ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME: AccentColor
+        TARGETED_DEVICE_FAMILY: "4"
+        GENERATE_INFOPLIST_FILE: NO
+        SKIP_INSTALL: YES
+        LD_RUNPATH_SEARCH_PATHS:
+          - "$(inherited)"
+          - "@executable_path/Frameworks"
+          - "@executable_path/../../Frameworks"
+
+schemes:
+  WifiMonitor-iOS:
+    build:
+      targets:
+        WifiMonitor-iOS: all
+        WifiMonitorWidget: all
+    run:
+      config: Debug
+    profile:
+      config: Release
+    analyze:
+      config: Debug
+    archive:
+      config: Release
+
+  WifiMonitor-watchOS:
+    build:
+      targets:
+        WifiMonitor-watchOS: all
+        WifiMonitorWatchWidget: all
+    run:
+      config: Debug
+    profile:
+      config: Release
+    analyze:
+      config: Debug
+    archive:
+      config: Release
+
+  WifiMonitorWidget:
+    build:
+      targets:
+        WifiMonitorWidget: all
+    run:
+      config: Debug
+
+  WifiMonitorWatchWidget:
+    build:
+      targets:
+        WifiMonitorWatchWidget: all
+    run:
+      config: Debug
